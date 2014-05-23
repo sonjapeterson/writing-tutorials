@@ -1,0 +1,802 @@
+/* 
+Colors I use:
+blue (one): #0C7782
+green (two): #99A313;
+red (three): #e85943; -> e85943
+gray(four): #565656; -> 565656
+white:; #FFFFFF
+*/
+
+/* general reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: 1;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+-webkit-font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+-o-font-smoothing: antialiased;
+
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	position: relative;
+    min-height: 100%;
+}
+body {
+	padding: 0;
+	font-size: 18px;
+	color: #000000;
+	font-family: 'Lato', Helvetica;
+	margin: 0 0 160px; /* allows room for footer */
+}
+
+h1, h2, h3, h4, p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #565656;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-family: 'Kite One', Helvetica;
+	font-weight: normal;
+
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Kite One', Helvetica;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-family: 'Kite One', Helvetica;
+	font-weight: bold;
+
+}
+
+p {
+	font-family: 'Lato', Helvetica;
+	color: #000000;
+	font-weight: 400;
+	line-height: 1.3;
+
+}
+
+a {
+	text-decoration: none;
+	color: #db6c19;
+	
+}
+
+a:hover {
+	text-decoration: none;
+	color: #565656;
+}
+
+ul {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+title {
+	font-style: italic;
+	margin-right: .2em;
+}
+
+/* index divs */
+
+
+#welcome {
+	margin: 0 auto;
+	text-align: center;
+	width: 50em;
+}
+
+#welcome h1 {
+	color: #FFFFFF;
+	padding-top: 8%;
+
+}
+
+#welcome h2 {
+	padding-bottom: 2em;
+	color: #FFFFFF;
+}
+
+#intropic {
+	padding-top: 2%;
+	height: 15em;
+}
+
+#herocontainer {
+	width: 100%;
+	background: #565656 url(herobackground4.png) no-repeat right top;
+	position: absolute;
+	height: 13.889em;
+	background-position: center;
+	background-origin: content-box;
+	background-repeat: none;
+
+}
+#hero {
+	width: 50em;
+	margin: 0 auto;
+	padding: 75px 0px 2px 0px;
+	position: relative;
+	height: 175px;	
+	color: #FFFFFF;
+}
+
+#mobileoptions {
+	display: none;
+}
+
+#mobileoptions h1, #mobileoptions h2 {
+	color: #FFFFFF;
+}
+
+.tutorialoption {
+	border-radius: .83em;
+	background-color: #FFFFFF;
+	display: inline-block;
+	padding: .75em;
+	position: absolute;
+	width: 11em;
+	text-align: center;
+		-webkit-transition:background-color .1s ease-in;
+	-moz-transition:background-color .1s ease-in;
+	-o-transition:background-color .1s ease-in;
+	transition:background-color .1s ease-in;
+	color: #565656;
+}
+
+.tutorialoption a {
+	text-decoration: none;
+}
+
+.tutorialoption:hover {
+	color: #FFFFFF;
+}
+
+.tutorialoption.one:hover {
+	background-color: #000000;
+}
+
+.tutorialoption.one {
+	left: 2.77em;
+	color: #0C7782;
+}
+
+.tutorialoption.two {
+	left: 50%;
+	margin-left: -6.5em;
+	color: #99A313;
+}
+.tutorialoption.three {
+	right: 2.77em;
+	color: #e85943;
+}
+
+.tutorialoption.one:hover {
+	background-color: #0C7782;
+	color: #FFFFFF;
+}
+
+.tutorialoption.two:hover {
+	background-color: #99A313;
+	color: #FFFFFF;
+}
+
+.tutorialoption.three:hover {
+	background-color: #e85943;
+	color: #FFFFFF;
+}
+
+/* footer divs */
+#footer {
+	background-color: #FFFFFF;
+	color: #565656;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:105px;
+	overflow: hidden;
+}
+
+#footer a {
+	line-height: 70px;
+	vertical-align: center;
+	text-decoration: none;
+	
+}
+
+.bottom a {
+	color: #FFFFFF;
+}
+
+.bottom a:hover {
+	color: #db6c19;;
+}
+
+.bottommain a {
+	color: #565656;
+}
+
+.bottommain a:hover {
+	color: #ef7816;
+	
+}
+#footer ul {
+	text-align: right;
+	list-style-type: none;
+}
+
+#footer li {
+	display: inline-block;
+	padding: 0em 1em;
+}
+
+
+.top {
+	height: 15px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #99A313;
+	border-top: 10px solid #e85943;
+}
+
+.bottom, .bottommain {
+	background-color: #565656;
+	padding: 0;
+	margin: 0;
+	border-top: 10px solid #0C7782;
+}
+
+
+
+/* tutorial intro page divs */
+
+#tutorialintro {
+	width: 35%;
+	float: left;
+	margin-left: 10%;
+	background-color: #FFFFFF;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+#otheroptions {
+	margin-top: 5%;
+	width: 25%;
+	background-color: #FFFFFF;
+	border-radius: 1em;
+	margin-left: 50%;
+	padding: 1em;
+	
+}
+
+.optionone, .optiontwo, .optionthree, .optionfour {
+	display: block;
+	border-radius: .83em;
+	padding: .75em;
+	overflow: hidden;
+	text-align: center;
+	width: 65%;
+	margin: .5em auto;
+	text-decoration: none;
+	-webkit-transition:background-color .1s ease-in;
+	-moz-transition:background-color .1s ease-in;
+	-o-transition:background-color .1s ease-in;
+	transition:background-color .1s ease-in;
+}
+.optionone {
+	color: #0C7782;
+	border: 2px solid #999999;
+}
+.optiontwo {
+	color: #99A313;
+	border: 2px solid #999999;
+}
+
+.optionthree {
+	color: #e85943;
+	border: 2px solid #999999;
+}
+
+.optionfour {
+	color: #565656;
+	border: 2px solid #999999;	
+}
+
+.optionone:hover, .optiontwo:hover, .optionthree:hover, .optionfour:hover {
+	background-color: #565656;
+	color: #FFFFFF;
+	border: 2px solid #565656;
+	}
+
+
+.bold {
+	font-weight: 600;
+}
+
+#otheroptions #returnbutton {
+	display: none;
+}
+
+#otheroptions.wider {
+	width: 50%;
+	margin: 5% auto;
+}
+	
+/* tutorial page divs */
+
+#topmenu {
+	padding: 1em 2em 1.3em 2em;
+	background-image: url(stepbackground.png);
+	background-repeat: no-repeat;
+	background-origin: right;
+	background-clip: top;
+}
+
+#topmenu h3 {
+	color: #FFFFFF;
+}
+
+.steps ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+.steps li {
+	display: inline-block;
+	height: 1.5em;
+	width: 1.5em;
+	padding: .5em;
+	background-image: ;
+	background-color: #FFFFFF;
+	border-radius: .5em;
+	text-align: center;
+	line-height: 1.5em;
+	vertical-align: center;
+	margin-right: 20px;
+	-webkit-transition:background-color .1s ease-in;
+	-moz-transition:background-color .1s ease-in;
+	-o-transition:background-color .1s ease-in;
+	transition:background-color .1s ease-in;
+}
+
+.steps a li {
+	text-decoration: none;
+	color: #565656;
+}
+
+.steps li:hover {
+	background-color: #565656;
+	color: #FFFFFF;
+}
+
+.steps li.current {
+	background-color: #565656;
+	color: #FFFFFF;
+}
+
+#main {
+	width: 75%;
+	padding-left: 2em;
+}
+
+p.intro {
+	font-size: 1.25em;
+}
+
+
+.leftcol {
+	width: 35%;
+	padding: 1%;
+	float: left;
+	margin-bottom: 1em;
+}
+
+.leftcolbig {
+	width: 60%;
+	padding: 1%;
+	float: left;
+	margin-bottom: 1em;
+}
+
+.rightcolsmall {
+	width: 35%;
+	padding: 1%;
+	float: right;
+	margin-bottom: 1.5em;
+}
+
+
+.example {
+	float: right;
+	width: 60%;
+	padding: 1%;
+	margin-bottom: 1.5em;
+}
+
+.container {
+	display: block;
+}
+
+.leftcol h3, .example h3, .leftcolbig h3, .rightcolsmall h3 {
+	border-bottom: 2px solid #656565;
+}
+
+.examplequote {
+	font-style: italic;
+}
+
+.bad {
+	background-color: #e85943;
+	color: white;
+	border-radius: 5px;
+	padding: 2px;
+	margin-right: 5px;
+}
+
+.good {
+	background-color: #99A313;
+	color: white;
+	border-radius: 5px;
+	padding: 2px;
+	margin-right: 5px;
+}
+
+.citation {
+	font-size: 0.7em;
+	font-style: italic;
+	text-align: right;
+}
+
+.floatright {
+	float: right;
+	
+}
+
+.floatleft {
+	float: left;
+}
+#stepnav {
+	clear: both;
+	text-align: right;
+	padding-bottom: 1.5em;
+}
+
+#stepnav a {
+	color: #565656;
+	background-color: #FFFFFF;
+	border: 2px solid #565656;
+	padding: .75em;
+	margin-right: 20px;
+	font-size: 20px;
+	border-radius: .83em;
+	text-decoration: none;
+	font-weight: 400;
+		-webkit-transition:background-color .1s ease-in;
+	-moz-transition:background-color .1s ease-in;
+	-o-transition:background-color .1s ease-in;
+	transition:background-color .1s ease-in;
+}
+
+#stepnav a:hover {
+	color: #FFFFFF;
+	background-color: #565656;
+	padding: .75em
+}
+
+#mobileoptionstutorial {
+	display: none;
+}
+
+form ul {
+	list-style-type: none;
+}
+
+/* background colors for #topmenu */
+
+.oneback {
+	background-color: #0C7782;
+}
+
+.threeback {
+	background-color: #e85943;
+}
+
+.twoback {
+	background-color: #99A313;
+}
+
+.fourback {
+	background-color: #565656;
+}
+
+.colorone {
+	color: #0C7782;
+}
+
+.colortwo {
+	color: #99A313;
+}
+
+.colorthree {
+	color: #e85943;
+}
+
+
+title {
+	display: inline;
+	font-style: italic;
+}
+
+/* responsive styles */
+	
+	@media screen and (max-width: 1050px) {
+		body { font-size: 17px; }
+	}
+	@media screen and (max-width: 900px) {
+		body { font-size: 16px; }
+	}
+	
+	@media screen and (max-width: 768px) {
+		body { font-size: 14px; }
+
+		#topmenu {
+			background-image: none;
+		}
+
+		#tutorialintro {
+			font-size: 18px;
+			float: none;
+			width: 75%;
+			margin: 2em auto;
+		}
+
+		#otheroptions, #otheroptions.wider {
+			font-size: 20px;
+			width: 75%;
+			margin: 2em auto;
+		}
+
+		.optionone, .optiontwo, .optionthree, .optionfour {
+			font-size: 20px;
+			width: 50%
+		}
+
+	}
+	
+	@media screen and (max-width: 630px) {
+
+		body {
+			font-size: 16px;
+			margin: 0;
+		}
+
+		#intropic {
+			display: none;
+		}
+
+		#welcome {
+			width: 100%;
+			padding: 0em;
+			margin: 0em;
+		}
+		#welcome h1 {
+			padding-bottom: .25em;
+			padding-right: .5em;
+			padding-left: .5em;
+			padding-top: .5em;
+			text-align: center;
+			margin: 0;
+		}
+
+		#welcome h2 {
+			padding-bottom: .5em;
+			padding-right: .5em;
+			padding-left: .5em;
+		}
+
+
+		#herocontainer {
+			padding-top: 0;
+			margin-top: 0;
+			background-image: none;
+		}
+
+		#hero {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+		}
+
+		.tutorialoption {
+			display: block;
+			position: static;
+			font-size: 1.5em;
+		}
+
+		.tutorialoption a, a:hover, a:visited, a:link, a:active {
+			text-decoration: none;
+			border: none;
+		}
+
+		.tutorialoption.one {
+			text-decoration: none;
+		}
+
+		.tutorialoption.one {
+			margin: 0 auto 1em auto;
+			color: #0C7782;
+
+		}
+
+		.tutorialoption.two {
+			margin: 0 auto 1em auto;
+			color: #99A313;
+		}
+		.tutorialoption.three {
+			margin: 0 auto 1em auto;
+			color: #e85943;
+		}
+
+		#footer {
+			display: none;
+		}
+
+		#mobileoptions {
+			display: block;
+			text-align: center;
+		}
+
+		#topmenu {
+			text-align: center;
+			
+		}
+		#main {
+			margin: 0 auto;
+			padding: 0;
+			width: 90%;
+			padding-left: 0;
+		}
+
+		.leftcol, .leftcolbig {
+			float: none;
+			width: 100%;
+			padding: 1.5em 0;
+			margin: 0;
+		}
+		.example, .rightcolsmall {
+			margin-left: 0;
+			width: 100%;
+			padding: 1em 0px;
+		}
+
+		#stepnav {
+			padding: 1em 0;
+			margin: 0;
+			text-align: center;
+		}
+
+		#mobileoptionstutorial {
+			background-color: #565656;
+			padding-top: 2em;
+			display: block;
+			text-align: center;
+			padding-bottom: 20px;
+			margin-top: 2em;
+		}
+
+		.optionone, .optiontwo, .optionthree, .optionfour {
+			font-size: 20px;
+			width: 70%;
+		}
+
+		#otheroptions #returnbutton {
+			display: block;
+		}
+		
+		.floatright {
+			display: none;
+		}
+	}
+	
+	@media screen and (max-width: 400px) {
+		html {
+			position: static;
+		    min-height: none;
+		}
+
+		body {
+			font-size: 18px;
+			margin: 0;
+		}
+
+		
+		.tutorialoption {
+			display: block;
+			position: static;
+			font-size: 1.1em;
+		}
+
+		.tutorialoption.one {
+			margin: 0 auto 1.5em auto;
+		}
+
+		.tutorialoption.two {
+			margin: 0 auto 1.5em auto;
+		}
+		.tutorialoption.three {
+			margin: 0 auto 1.5em auto;
+		}
+
+		#herocontainer, #hero {
+			position: static;
+			margin-bottom: 100px;
+		}
+
+		#footer {
+			display: none;
+		}
+
+		#mobileoptions {
+			display: block;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+
+		.steps {
+			display: none;
+		}
+
+		#mobileoptionstutorial {
+			background-color: #565656;
+			padding-top: 2em;
+			margin-top: 2em;
+			display: block;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+
+		.optionone, .optiontwo, .optionthree, .optionfour {
+			font-size: 20px;
+			width: 80%;
+		}
+
+		.floatright {
+			display: none;
+		}
+	}
+	
+	
+
